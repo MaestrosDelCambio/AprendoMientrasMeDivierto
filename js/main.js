@@ -11,11 +11,14 @@ let loaded = (eventLoaded) => {
     // Elementos
     var elemento1 = document.getElementById('nombre')
     var elemento2 = document.getElementById('email')
+    var elemento3 = document.getElementById('sugerencias')
     
 
 
     var nombre = elemento1.value.trim();
     var email = elemento2.value.trim();
+    var sugerencias = elemento3.value.trim();
+
     
 
     if (nombre.length == 0) {
@@ -26,6 +29,11 @@ let loaded = (eventLoaded) => {
     if (email.length === 0) {
       elemento2.focus();
       alert('Por favor, ingrese su correo electrónico.');
+      return;
+    }
+    if (sugerencias.length === 0) {
+      elemento3.focus();
+      alert('Por favor, ingrese una sugerencia.');
       return;
     }
     
@@ -43,6 +51,7 @@ let loaded = (eventLoaded) => {
     const datos = {
       nombre: nombre,
       email: email,
+      sugerencias: sugerencias
       
     };
 
