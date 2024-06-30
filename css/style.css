@@ -42,6 +42,7 @@ a.more {
 	background: #f7d2bb !important;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .custom-navbar .navbar-brand {
